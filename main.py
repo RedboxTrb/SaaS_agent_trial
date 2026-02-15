@@ -12,12 +12,12 @@ def print_banner():
 
 
 def get_api_key():
-    # using hardcoded key for convenience
-    api_key = "AIzaSyAhaqtFM_GCUIdfCYuBVNfouNHdX8G28AU"
+    # check environment variable first
+    api_key = os.getenv("GEMINI_API_KEY")
 
-    # fallback to env variable if needed
+    # prompt user if not found
     if not api_key:
-        api_key = os.getenv("GEMINI_API_KEY")
+        api_key = None
 
     if not api_key:
         print("GEMINI_API_KEY not found.")
