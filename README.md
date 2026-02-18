@@ -60,12 +60,5 @@ See `META_COMMENTARY.txt` for:
 - Implementation details
 - Evaluation criteria alignment
 
-## Technical Stack
-
-- Google Gemini 2.5 Flash
-- Python 3.8+
-- JSON file storage
-
 ---
 
-Built by Kushal, February 2026
